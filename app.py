@@ -38,7 +38,7 @@ def display_chat_history(chain):
 
     with container:
         with st.form(key='my_form', clear_on_submit=True):
-            user_input = st.text_input("Question:", placeholder="Ask about your Documents", key='input')
+            user_input = st.text_input("Question:", placeholder="Ask about the documents", key='input')
             submit_button = st.form_submit_button(label='Send')
 
         if submit_button and user_input:
@@ -74,8 +74,7 @@ def main():
     initialize_session_state()
     st.title("BOT FOR WORKBENCH 🤖")
     st.markdown("### Built by [AI Automation team❤️](https://github.com/anmol61)", unsafe_allow_html=True)
-    # Initialize Streamlit
-    st.sidebar.title("Document Processing")
+
     # Specify the directory containing the PDF file
     pdf_directory = "pdf_files"
     pdf_files = os.listdir(pdf_directory)
