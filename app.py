@@ -14,7 +14,7 @@ from langchain.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
 import os
 from dotenv import load_dotenv
 import tempfile
-
+import shutil
 
 load_dotenv()
 def initialize_session_state():
